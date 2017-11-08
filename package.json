@@ -1,6 +1,9 @@
 {
   "name": "pro.jsonlint.com",
   "version": "0.1.0",
+  "scripts": {
+      "build": "grunt"
+  },
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
