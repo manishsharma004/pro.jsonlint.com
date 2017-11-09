@@ -770,7 +770,19 @@ var FADE_SPEED = 100,
 			}, this));
 
 			this._checkForJSON();
-
+            $(".JSONValidate .json_input")[0].onkeydown = function (e) {
+                var $this = this;
+                if (e.key == '|' && e.ctrlKey) {
+                    this.value = JSON.stringify(JSON.parse(this.value));
+                    e.preventDefault();
+                } else if (e.key == '\\' && e.ctrlKey) {
+                    $(".JSONValidate").filter(function (x) { return $(this).find($this).length > 0 }).find('.button.validate').click();
+                    e.preventDefault();
+                } else if (e.key == 'Escape') {
+                    $(".close-btn").click();
+                    e.preventDefault();
+                }
+            }
 			this.createErrorView();
 
 	        _.delay(this.resize, 150);
