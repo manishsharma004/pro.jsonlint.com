@@ -19,3 +19,4 @@
 
 ## Added features
 1. Support for cookies
+2. Support for shortcuts prettify(ctrl + \) and compress(ctrl + |)
