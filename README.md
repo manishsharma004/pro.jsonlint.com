@@ -1,4 +1,4 @@
-# Pro.JSONLIN fork (Salvaged)
+# Pro.JSONLINT fork (Salvaged)
 
 
 ## Installation
